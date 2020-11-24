@@ -1,1 +1,3 @@
-# leticiasaraivascripts20202
+## Disciplina Programação de Script
+
+### Aluna: Letícia Saraiva Chaves
