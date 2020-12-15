@@ -1,3 +1,4 @@
+#!/bin/bash
 grep -v 'sshd' /home/compartilhado/auth.log.1 
 
 grep -E 'sshd.*session opened' /home/compartilhado/auth.log.1 
