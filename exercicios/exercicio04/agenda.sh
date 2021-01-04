@@ -3,15 +3,11 @@ opcao=${1}
 nome=${2}
 email=${3}
 
-if $(test ${opcao} = "adicionar") &> /dev/null 
-then 
-	echo "${nome}:${email}" >> usuarios.db
-else
-	if $(test ${opcao} = "listar") &> /dev/null
-	then
+case ${opcao} in
+	adicionar)
+		echo "${nome}:${email}" >> usuarios.db
+		 ;;
+	listar)
 		cat usuarios.db
-	else
-		echo "Erro"
-	fi
-fi
-
+		;;
+esac
