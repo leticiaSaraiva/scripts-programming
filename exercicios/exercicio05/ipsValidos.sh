@@ -1,4 +1,5 @@
 #!/bin/bash
+# Correção OK
 IPS=${1}
 
 for ip in $(cat ${IPS})
