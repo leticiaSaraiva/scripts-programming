@@ -1,4 +1,5 @@
 #!/bin/bash
+# Correção: 1,0
 parametro=${1}
 
 if $(test -d ${parametro}) &> /dev/null
