@@ -1,4 +1,5 @@
 #!/bin/bash
+# Correção: 0,5
 IPS=${1}
 
 echo "Relatório de Latência."
