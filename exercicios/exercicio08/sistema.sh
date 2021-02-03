@@ -1,4 +1,5 @@
 #!/bin/bash
+# Correção: 1,0
 trap "clear; echo 'Até a próxima!'; exit" 2
 
 menu()
