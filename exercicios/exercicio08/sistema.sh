@@ -12,34 +12,7 @@ menu()
 	echo "5 - Uso da CPU por processos" 
 	echo "6 - Uso da memória física"
 	
-	read -p "Digite o número referente a opção desejada: " OPCAO
-	
-	if [[ ${OPCAO} -eq 1 ]]
-	then
-		tempo_ligado
-	elif [[ ${OPCAO} -eq 2 ]]  
-	then
-		ultimas_msg_kernel
-	elif [[ ${OPCAO} -eq 3 ]]  
-	then
-		memoria_virtual
-	elif [[ ${OPCAO} -eq 4 ]]  
-	then
-		uso_da_cpu_por_nucleo
-	elif [[ ${OPCAO} -eq 5 ]]  
-	then
-		uso_da_cpu_por_processos
-	elif [[ ${OPCAO} -eq 6 ]]  
-	then
-		uso_memoria_fisica
-	else
-		clear
-		echo "Opção inválida"
-	fi
-	
-	echo ""
-	read -p "Pressione enter para retornar ao menu inicial..." 
-	
+	read -p "Digite o número referente a opção desejada: " OPCAO	
 }
 
 tempo_ligado()
@@ -81,4 +54,30 @@ uso_memoria_fisica()
 while true
 do
 	menu
+	
+	if [[ ${OPCAO} -eq 1 ]]
+	then
+		tempo_ligado
+	elif [[ ${OPCAO} -eq 2 ]]  
+	then
+		ultimas_msg_kernel
+	elif [[ ${OPCAO} -eq 3 ]]  
+	then
+		memoria_virtual
+	elif [[ ${OPCAO} -eq 4 ]]  
+	then
+		uso_da_cpu_por_nucleo
+	elif [[ ${OPCAO} -eq 5 ]]  
+	then
+		uso_da_cpu_por_processos
+	elif [[ ${OPCAO} -eq 6 ]]  
+	then
+		uso_memoria_fisica
+	else
+		clear
+		echo "Opção inválida"
+	fi
+	
+	echo ""
+	read -p "Pressione enter para retornar ao menu inicial..."
 done
