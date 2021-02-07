@@ -1,4 +1,5 @@
 #!/bin/bash
+# Correção: 1,0
 read -p "Informe o arquivo: " ARQ
 
 # percorrer as palavras únicas do arquivo e contar a quantidade de cada uma no arquivo
