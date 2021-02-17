@@ -1,4 +1,5 @@
 #!/bin/bash
+# Correção: 1,0
 
 TECLA=
 VISOR=
@@ -37,16 +38,16 @@ do
           VISOR=$TECLA
        else
           # e já existe um número e um operador na tela
-          if [[ $VISOR =~ [0-9]+[[:blank:]][*/\+\-] ]]
+          if [[ $VISOR =~ [0-9]+[[:blank:]][\*\+\-\/] ]]
 	  then
-	     # faça a operação
-	     VISOR="$VISOR $TECLA = `expr $VISOR $TECLA`"
+	     # faça a operação 
+	     VISOR="$VISOR $TECLA = $(echo "scale=2; $VISOR $TECLA" | bc -l)"
 	  fi
        fi
    # se você não digitou um número
    else
        # mas digitou um operador
-       if [[ $TECLA =~ [*/\+\-] ]]
+       if [[ $TECLA =~ [\*\+\-\/] ]]
        then
           # atualize a tela para mostrar o primeiro número e o operador
           VISOR="$VISOR $TECLA"
