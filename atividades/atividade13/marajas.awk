@@ -10,6 +10,7 @@ NR != 1{
 	}
 }
 END{
-	for (curso in cursos) 
+	for (curso in cursos){
 		print curso": ", nomes[curso]", ", cursos[curso] | "sort"
+	}
 }
