@@ -1,4 +1,5 @@
 #!/bin/bash
+# OK
 hostname="vazio"
 ip="vazio"
 acao="vazio"

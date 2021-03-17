@@ -1,4 +1,5 @@
 #!/bin/bash
+# OK
 
 echo "Criando servidor..."
 
