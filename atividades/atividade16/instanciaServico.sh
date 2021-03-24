@@ -1,4 +1,5 @@
 #!/bin/bash
+# Correção: 1,0
 
 echo "Criando servidor de Monitoramento em CRON..."
 

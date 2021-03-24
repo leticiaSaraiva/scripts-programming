@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# O script já executa como root, não é preciso sudo.
 sudo echo "#!/bin/bash
 
 DATA_HORARIO=\$(date +%H:%M:%S-%D)
