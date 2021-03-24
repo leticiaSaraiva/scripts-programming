@@ -54,7 +54,7 @@ sleep 50
 
 sed -i "s/usuario/${USER}/" user_data2.sh
 sed -i "s/senha/${PASSWORD}/" user_data2.sh
-sed -i "s/ip_banco/${IP_PRIV}/" user_data2.sh 
+sed -i "s/ip_banco/${IP_PRIV}/" user_data2.sh
 
 # Criando a outra instância e obtendo o Id 
 INSTANCEID=$(aws ec2 run-instances --image-id ${IMAGEID} --instance-type "t2.micro" --key-name ${KEYNAME} --security-group-ids ${SECGROUPID} --subnet-id ${SUBNETID} --user-data file://user_data2.sh --query "Instances[0].InstanceId" --output text)
