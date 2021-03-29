@@ -53,4 +53,4 @@ chown -R www-data:www-data /var/www/html/wordpress
 find /var/www/html/wordpress/ -type d -exec chmod 750 {} \;
 find /var/www/html/wordpress/ -type f -exec chmod 640 {} \;
 systemctl restart apache2
-EOF
+
